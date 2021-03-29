@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.SameWayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="日期："
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/regular"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:hint="例如：2020-01-01"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="车次："
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/regular"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:hint="车次或航班，例如：Z20或ACXXX"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="地区："
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/regular"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:hint="例如：武汉"/>
+
+    </LinearLayout>
+
+    <net.qiujuer.genius.ui.widget.Button
+        android:id="@+id/btn_login"
+        android:layout_width="280dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:gTouchEffect="ripple"
+        android:background="@drawable/button_shape"
+        app:gTouchColor="@color/black_alpha_48"
+        android:text="搜索"/>
+
+</LinearLayout>
